@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+body {
+    font-family: Michroma, serif;
+    background: linear-gradient(147deg, #D67116 0%, #B733BF 100%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(172, 169, 169);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(252, 205, 148);
+}
+
+.navbar-toggler {
+    background-color: rgb(224, 220, 215);
+}
+
+.sade-bar {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 217, 0, 0.315);
+}
+
+.sade-bar>p {
+    font-size: 1.1em;
+}
+
+.card {
+    background-color: rgba(255, 217, 0, 0.315);
+}
+
+.card a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+    color: white;
+}
+
+.img-slade {
+    padding-left: 90px;
+    padding-bottom: 50px;
+}
+
+.text-slide {
+    padding-right: 90px;
+    padding-bottom: 50px;
+    margin-block: auto;
+    color: black;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    border-top: white;
+    border-style: solid;
+    border-width: 0,5px;
+}
+
+.footer-text {
+    margin: auto auto;
+    color: white;
+}
+
+.footer-text-a>a,
+.text-link>a {
+    text-decoration: none;
+    color: white;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.media-tg-yt {
+    display: flex;
+    align-items: center;
+}
+
+.text-link {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.btn-outline-secondary {
+    background-color: rgba(255, 255, 255, 0.841);
+    border-style: solid;
+    border-color: black;
+    border-width: 1,5px;
+    color: black;
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 767px) {
+    .img-slade {
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-bottom: 20px;
+    }
+    .text-slide {
+        text-align: center;
+        padding: 0;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+}
+
